@@ -6,19 +6,39 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "lint": "eslint ./src/**/*.{js,jsx} App.js --no-error-on-unmatched-pattern"
   },
   "dependencies": {
+    "@apollo/client": "^3.13.8",
+    "@expo/metro-config": "^0.17.4",
+    "@expo/metro-runtime": "~3.1.1",
+    "@react-native-async-storage/async-storage": "1.21.0",
+    "@react-native-picker/picker": "^2.11.0",
+    "date-fns": "^4.1.0",
+    "dotenv": "^16.5.0",
     "expo": "~50.0.17",
+    "expo-constants": "~15.4.6",
+    "expo-linking": "~6.2.2",
     "expo-status-bar": "~1.11.1",
+    "formik": "^2.4.6",
+    "graphql": "^16.11.0",
+    "lodash": "^4.17.21",
     "react": "18.2.0",
-    "react-native": "0.73.6",
-    "react-native-web": "~0.19.6",
     "react-dom": "18.2.0",
-    "@expo/metro-runtime": "~3.1.1"
+    "react-native": "0.73.6",
+    "react-native-paper": "^5.14.0",
+    "react-native-safe-area-context": "^5.4.0",
+    "react-native-web": "~0.19.6",
+    "react-router-native": "^6.30.0",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "@babel/core": "^7.20.0",
+    "@babel/eslint-parser": "^7.27.1",
+    "eslint": "^9.26.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-native": "^5.0.0"
   },
   "private": true
 }
